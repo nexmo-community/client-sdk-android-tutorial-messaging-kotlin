@@ -51,7 +51,7 @@ class ChatViewModel : ViewModel() {
 
     fun onInit() {
         getConversation()
-        _userName.postValue(client.user.name)
+        _userName.postValue(client.user?.name)
     }
 
     private fun getConversation() {

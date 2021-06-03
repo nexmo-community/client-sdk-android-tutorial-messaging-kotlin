@@ -108,7 +108,7 @@ class ChatFragment : Fragment(R.layout.fragment_chat), BackPressHandler {
     }
 
     private fun getConversationLine(memberEvent: NexmoMemberEvent): String {
-        val user = memberEvent.member.user.name
+        val user = memberEvent.embeddedInfo.user.name
 
         return when (memberEvent.state) {
             NexmoMemberState.JOINED -> "$user joined"
@@ -119,7 +119,7 @@ class ChatFragment : Fragment(R.layout.fragment_chat), BackPressHandler {
     }
 
     private fun getConversationLine(textEvent: NexmoTextEvent): String {
-        val user = textEvent.fromMember.user.name
+        val user = textEvent.embeddedInfo.user.name
         return "$user said: ${textEvent.text}"
     }
 
