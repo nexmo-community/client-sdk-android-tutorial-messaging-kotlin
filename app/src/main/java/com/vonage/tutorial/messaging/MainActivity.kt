@@ -8,12 +8,15 @@ import com.nexmo.client.NexmoClient
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        NexmoClient.Builder().build(this)
+
         setContentView(R.layout.activity_main)
 
         val navController = findNavController(this, R.id.navHostFragment)
         NavManager.init(navController)
 
-        NexmoClient.Builder().build(this)
+
     }
 
     override fun onBackPressed() {
