@@ -1,5 +1,7 @@
 package com.vonage.tutorial.messaging
 
+import android.os.Handler
+import android.os.Looper
 import androidx.navigation.NavController
 import androidx.navigation.NavDirections
 
@@ -11,6 +13,8 @@ object NavManager {
     }
 
     fun navigate(navDirections: NavDirections) {
-        navController.navigate(navDirections)
+        Handler(Looper.getMainLooper()).post(Runnable {
+            navController.navigate(navDirections)
+        })
     }
 }
