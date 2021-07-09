@@ -1,3 +1,1 @@
-This repository is part of Android Client SDK [Creating Chat app tutorial](https://developer.nexmo.com/client-sdk/tutorials/in-app-messaging/introduction/kotlin).
-
-Java version is avialable [here](https://github.com/nexmo-community/client-sdk-android-tutorial-messaging-java).
+# ⚠️ This repository is no longer maintained. If you are looking for [in-app-messaging](https://developer.nexmo.com/client-sdk/tutorials/in-app-messaging/introduction/java) repository, please check [client-sdk-tutorials](https://github.com/nexmo-community/client-sdk-tutorials) repository.
